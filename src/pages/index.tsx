@@ -8,8 +8,6 @@ export default function Home() {
 
   function renderizarPortas() {
     return portas.map((porta) => {
-      console.log(porta.numero);
-
       return (
         <Porta
           key={porta.numero}

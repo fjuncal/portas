@@ -32,6 +32,10 @@ export class PortaModel {
     return this.aberta;
   }
 
+  getFechada() {
+    return !this.aberta;
+  }
+
   desselecionar() {
     const selecionada = false;
     return new PortaModel(
