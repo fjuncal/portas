@@ -22,7 +22,7 @@ export default function jogo() {
     const temPresenteValido = temPresente >= 1 && temPresente <= portas;
 
     setValido(qtdePortasValidas && temPresenteValido);
-  }, [portas]);
+  }, [portas, router.query.portas, router.query.temPresente]);
 
   function renderizarPortas() {
     return portas.map((porta) => {
